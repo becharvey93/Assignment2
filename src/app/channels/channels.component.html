@@ -1,0 +1,21 @@
+<h2>Channels</h2>
+
+<div>
+<h3>Your channels:</h3>
+</div>
+
+<div id="channel-list">
+<ul></ul>
+</div>
+
+<div>
+<h3>Create New Channel</h3>
+<form (submit)="createGroup($event)">
+     <input type="text" placeholder="Group Name" [(ngModel)]='groupname' name="groupname" id="groupname">
+     <input type="text" placeholder="Channel Name" [(ngModel)]='channelname' name="channelname" id="channelname">
+     <button type="submit">Submit</button>
+</form>
+</div>
+<div id="channel-display">
+
+</div>

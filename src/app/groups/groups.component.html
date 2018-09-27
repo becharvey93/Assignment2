@@ -1,0 +1,22 @@
+<h2>Groups</h2>
+
+<div>
+<h3>Your groups:</h3>
+</div>
+<div id="group-list">
+<ul></ul>
+</div>
+<div>
+<h3>Create New Group</h3>
+<form (submit)="createGroup($event)">
+     <input type="text" placeholder="Group Name" [(ngModel)]='newgroupname' name="groupname" id="groupname">
+     <button type="submit">Submit</button>
+</form>
+
+<h3>Add Members to Existing Group</h3>
+<form (submit)="addGroup($event)">
+     <input type="text" placeholder="Group Name" [(ngModel)]='groupname' name="groupname" id="groupname">
+     <input type="text" placeholder="Username of new member" [(ngModel)]='username' name="username" id="username">
+     <button type="submit">Submit</button>
+</form>
+</div>

@@ -1,0 +1,26 @@
+
+
+h1, h2, div {
+    color: #007a99;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #e6faff;
+    text-align: center;
+    padding-top: 20px;
+    padding-right:100px;
+    padding-bottom: 20px; 
+    padding-left:20px;
+    border-style: solid; 
+    border-width: 1px; 
+    width: 50%;
+    margin-top: 0px; 
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: -10px;
+}
+
+div {
+    text-align: left;
+}
+form {
+    padding: 20px;
+}
