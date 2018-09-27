@@ -1,7 +1,7 @@
 
 nav {
-    background-color: #e6faff;
-    color: #007a99;
+    background-color: #fda50f;
+    color: #000000;
     text-align: left;
     font-family: verdana;
     font-size: 20px;
@@ -20,9 +20,9 @@ nav {
 }
 
 h1, h2, div {
-    color: #007a99;
+    color: #000000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #e6faff;
+    background-color: #fda50f;
     text-align: center;
     padding-top: 20px;
     padding-right:100px;
