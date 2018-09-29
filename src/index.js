@@ -1,15 +1,10 @@
-//var express = require('express');
-//var io = require('socket.io')(http);
-//var app = express();
-//var http = require('http').Server(app); 
 
-
-let express = require('express');
-let app = express();
-let http = require('http');
+var express = require('express');
+var app = express();
+var http = require('http').Server(app);
 let server = http.Server(app);
 let socketIO = require('socket.io');
-let io = socketIO(server);
+var io = require('socket.io')(http);
 
 
 const port = process.env.PORT || 3000;

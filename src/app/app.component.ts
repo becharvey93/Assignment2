@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'assignment-one';
 
   ngOnInit() {
+    //this.chatService.getMessage().subscribe
 
 
 
