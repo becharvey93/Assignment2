@@ -1,11 +1,17 @@
-<h2>Channels</h2>
-
-<div>
-<h3>Your channels:</h3>
-</div>
+<h2>{{username}}'s Channels</h2>
 
 <div id="channel-list">
 <ul></ul>
+</div>
+
+<div>
+    <input [(ngModel)]="message" />
+    <button (click)="sendMessage()">Send</button>
+    <div class="messages">
+        <div *ngFor="let message of messages" class="message">
+            {{message.text}}
+        </div>
+    </div>
 </div>
 
 <div>

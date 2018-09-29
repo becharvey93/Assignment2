@@ -1,4 +1,4 @@
-// set up mongoDB connection
+/*// set up mongoDB connection
 const MongoClient = require('mongodb').MongoClient; 
 const url = 'mongodb://localhost:27017';
 MongoClient.connect(url,function(err, client){
@@ -7,14 +7,14 @@ MongoClient.connect(url,function(err, client){
 
     const dbName = 'DATABASE_CHAT';
     const db = client.db(dbName);
-    
+
     var querycb = require('./serial/querycallback'); 
     // Call Backs
     querycb.updatedata(db, function(res){
         console.log(res);
     }); 
 }); 
-
+*/
 
 const express = require('express');
 const app = express(); 
