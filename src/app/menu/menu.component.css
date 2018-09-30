@@ -1,7 +1,10 @@
+bg {
+    background: url("../../assets/images/background.png");
+}
 
 nav {
-    background-color: #e6faff;
-    color: #007a99;
+    background-color: #fda50f;
+    color: #000000;
     text-align: left;
     font-family: verdana;
     font-size: 20px;
@@ -19,10 +22,10 @@ nav {
 
 }
 
-h1, h2, div {
-    color: #007a99;
+h1, h2 {
+    color: #000000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #e6faff;
+    background-color: #ffffff;
     text-align: center;
     padding-top: 20px;
     padding-right:100px;
@@ -37,3 +40,20 @@ h1, h2, div {
     margin-left: -10px;
 }
 
+div {
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fda50f;
+    text-align: center;
+    padding-top: 20px;
+    padding-right:100px;
+    padding-bottom: 20px; 
+    padding-left:20px;
+    border-style: solid; 
+    border-width: 1px; 
+    width: 50%;
+    margin-top: -10px; 
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: -10px;
+}

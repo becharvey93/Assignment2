@@ -11,7 +11,7 @@ MongoClient.connect(url,function(err, client){
     var querycb = require('./serial/querycallback'); 
     // Call Backs
     querycb.updatedata(db, function(res){
-        console.log(res);
+        console.log(result);
     }); 
 }); 
 */

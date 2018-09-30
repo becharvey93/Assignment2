@@ -1,10 +1,12 @@
 <h2>{{username}}'s Channels</h2>
 
-<div id="channel-list">
-<ul></ul>
-</div>
+<!-- <div id="channel-list">  
+        <div *ngFor="let channel in channels" class="channel">
+            <ul>{{channel.text}}</ul>
+                </div>
+</div> -->
 
-<div>
+<h2>Messages in Channel</h2> <!-- Display messages assiociated with selected channel -->
     <input [(ngModel)]="message" />
     <button (click)="sendMessage()">Send</button>
     <div class="messages">
@@ -12,10 +14,9 @@
             {{message.text}}
         </div>
     </div>
-</div>
 
 <div>
-<h3>Create New Channel</h3>
+<h3>Create New Channel</h3> <!-- Create new channel -->
 <form (submit)="createGroup($event)">
      <input type="text" placeholder="Group Name" [(ngModel)]='groupname' name="groupname" id="groupname">
      <input type="text" placeholder="Channel Name" [(ngModel)]='channelname' name="channelname" id="channelname">
