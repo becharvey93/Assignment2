@@ -11,6 +11,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { HttpModule } from '@angular/http';
 //import { ChatService } from './socket.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,

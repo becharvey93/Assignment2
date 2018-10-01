@@ -7,4 +7,14 @@
 </form>
 </div>
 
+<h2>Create New User</h2>
+<div>
+<form (submit)="createUser($event)">
+  <input type="email" placeholder="Username" [(ngModel)]='newUsername' name="newUsername" id="newUsername">
+  <input type="password" placeholder="Password" [(ngModel)]='newPassword' name="newPassword" id="newPassword">
+  <button type="submit">Submit</button>
+</form>
+</div>
+
+
 

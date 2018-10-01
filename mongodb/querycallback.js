@@ -1,9 +1,9 @@
-/* module.exports = 
+module.exports = 
     {
         //Object with one method - update data
         //Takes in a reference to the database and returns the result as a callback
         updatedata:function(db,result){
-            const collection = db.collection('products');
+            const collection = db.collection('CollectionUsers');
             collection.findOne({id:'1'}, function(err,res){
                 if(err)throw err; 
                     collection.find().toArray(function(err,res){
@@ -13,4 +13,4 @@
                     })
             })
         }
-    } */
+    }

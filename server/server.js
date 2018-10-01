@@ -1,4 +1,4 @@
-/*// set up mongoDB connection
+// set up mongoDB connection
 const MongoClient = require('mongodb').MongoClient; 
 const url = 'mongodb://localhost:27017';
 MongoClient.connect(url,function(err, client){
@@ -14,7 +14,7 @@ MongoClient.connect(url,function(err, client){
         console.log(result);
     }); 
 }); 
-*/
+
 
 const express = require('express');
 const app = express(); 

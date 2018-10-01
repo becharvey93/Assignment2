@@ -4,7 +4,7 @@ module.exports = function(app, db){
         const assert = require('assert');
             var username = req.body.name.toString(); 
             var password = req.body.passowrd.toString(); 
-            const collection = db.collection('credentials'); // make sure this matches whats in the database it might be CollectionUsers
+            const collection = db.collection('CollectionUsers'); // make sure this matches whats in the database it might be CollectionUsers
             // do we have a user with that password password
             collection.find({'name':username, 'password':password}).count(function(err,count){
                 assert.equal(null,err);

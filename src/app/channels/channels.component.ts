@@ -17,16 +17,16 @@ export class ChannelsComponent implements OnInit {
 
   ngOnInit() {
     //check for valid user and subscribe to service (chat messages)
-      if (!sessionStorage.getItem('username')){
+      if (!localStorage.getItem('username')){
         //No valid session is available
         console.log('Not Validated'); 
-        sessionStorage.clear(); 
+        localStorage.clear(); 
         alert("Not a valid user");
         this.router.navigateByUrl('login');
       }else{
         // we have a valid username. Subscribe to Chat service. add Chat message
         // to the message array each time you are pushed a message from the server
-        this.username = sessionStorage.getItem('username'); //change this once the DB is set up
+        this.username = localStorage.getItem('username'); //change this once the DB is set up
         console.log("Session started for: " + this.username);
         this.connection = this.sockServ.getMessages().subscribe(message=>{
           //"message" is value of input field
